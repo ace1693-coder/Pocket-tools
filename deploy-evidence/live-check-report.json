@@ -1,0 +1,150 @@
+{
+  "base": "https://ace1693-coder.github.io/Pocket-tools/",
+  "at": "2026-11-21T08:56:26.110Z",
+  "viewport": "390x844 @3x mobile",
+  "total": 23,
+  "passed": 23,
+  "externalRequests": 0,
+  "consoleErrors": [],
+  "pageErrors": [],
+  "checks": [
+    {
+      "group": "기본",
+      "name": "HTTPS 첫 로드",
+      "ok": true,
+      "detail": "HTTP 200 · 122ms · https://ace1693-coder.github.io/Pocket-tools/"
+    },
+    {
+      "group": "기본",
+      "name": "모바일 뷰포트 390×844",
+      "ok": true,
+      "detail": "innerWidth=390, innerHeight=844, dpr=3"
+    },
+    {
+      "group": "기본",
+      "name": "가로 스크롤 0 (첫 화면)",
+      "ok": true,
+      "detail": "scrollWidth 390 ≤ clientWidth 390"
+    },
+    {
+      "group": "탭",
+      "name": "진입: URL 정리",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"URL 추적 파라미터 제거\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: 이미지 압축",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"이미지 압축\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: 비율 조정",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"사진 비율 조정\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: PDF ↔ 이미지",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"PDF ↔ 이미지\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: EXIF·모자이크",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"EXIF 제거 · 모자이크\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: 워터마크",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"워터마크\""
+    },
+    {
+      "group": "탭",
+      "name": "진입: QR 생성",
+      "ok": true,
+      "detail": "패널 표시=true, 가로스크롤 390/390, 제목=\"QR 코드 만들기\""
+    },
+    {
+      "group": "URL",
+      "name": "추적 파라미터 제거",
+      "ok": true,
+      "detail": "요약=\"추적 파라미터 5개를 제거했습니다. 필수 파라미터 2개는 그대로 보존했습니다.\" · 결과=https://shop.example.com/item/4821?id=4821&page=2#review"
+    },
+    {
+      "group": "이미지",
+      "name": "압축 이미지 다운로드",
+      "ok": true,
+      "detail": "test-photo-압축.jpg 457274B 1600x1200"
+    },
+    {
+      "group": "이미지",
+      "name": "처리 통계 표시",
+      "ok": true,
+      "detail": "원본 1.09 MB → 447 KB (-60.0%)"
+    },
+    {
+      "group": "QR",
+      "name": "QR PNG 다운로드·내용 일치",
+      "ok": true,
+      "detail": "1024x1024 · 디코드=\"https://ace1693-coder.github.io/Pocket-tools/\""
+    },
+    {
+      "group": "PDF",
+      "name": "이미지 → PDF 생성",
+      "ok": true,
+      "detail": "1306500B · 2페이지 · 1600x1200, 800x600"
+    },
+    {
+      "group": "PDF",
+      "name": "PDF → 이미지 렌더",
+      "ok": true,
+      "detail": "2페이지 렌더 · 첫쪽=\"\""
+    },
+    {
+      "group": "EXIF",
+      "name": "메타데이터 검출",
+      "ok": true,
+      "detail": "메타데이터 11개 항목 발견 · JPEG · GPS=37.570000° N, 126.978056° E · 카메라=PocketCam PC-2026 · 촬영=2026-11-20 15:04:05"
+    },
+    {
+      "group": "EXIF",
+      "name": "저장 결과 EXIF 0건",
+      "ok": true,
+      "detail": "358823B · 태그 0개 · APP1=false"
+    },
+    {
+      "group": "PWA",
+      "name": "Service Worker 등록·제어",
+      "ok": true,
+      "detail": "{\"scope\":\"https://ace1693-coder.github.io/Pocket-tools/\",\"active\":true,\"state\":\"activated\",\"controlled\":true}"
+    },
+    {
+      "group": "PWA",
+      "name": "Manifest 유효",
+      "ok": true,
+      "detail": "Pocket Tools — 링크·사진·PDF·QR 7가지 도구 · display=standalone · icons=192x192/512x512/512x512"
+    },
+    {
+      "group": "보안",
+      "name": "외부 오리진 요청 0건",
+      "ok": true,
+      "detail": "전송된 외부 요청 없음"
+    },
+    {
+      "group": "재로드",
+      "name": "새로고침 후 정상",
+      "ok": true,
+      "detail": "제목=\"Pocket Tools\" · 가로스크롤 390/390 · SW {\"controlled\":true,\"active\":true}"
+    },
+    {
+      "group": "안정성",
+      "name": "콘솔 에러 0 · 페이지 에러 0",
+      "ok": true,
+      "detail": "console=0 · page=0"
+    }
+  ]
+}
