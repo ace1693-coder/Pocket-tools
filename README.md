@@ -117,12 +117,16 @@ npm run build && node e2e/e2e.mjs
 
 ## 배포
 
-**https://ace1693-coder.github.io/pocket-tools/** (GitHub Pages, 무료)
+**https://ace1693-coder.github.io/Pocket-tools/** (GitHub Pages, 무료)
 
-- 저장소: https://github.com/ace1693-coder/pocket-tools (public, `main` 브랜치)
-- `main`에 푸시하면 `.github/workflows/deploy.yml`이 `npm ci` → 단위 테스트 → `npm run build` → Pages 배포를 자동으로 수행합니다.
+- 저장소: https://github.com/ace1693-coder/Pocket-tools (public) — `main` = 소스, `gh-pages` = 빌드 결과(배포 대상).
+- Pages 설정: Settings → Pages → Deploy from a branch → `gh-pages` / `/ (root)`.
 - `vite.config.ts`의 `base`는 `/pocket-tools/`(하위 경로)로 고정되어 있고, 로컬에서 루트로 확인하려면 `VITE_BASE=/ npm run build`로 덮어씁니다.
+  저장소 이름 대소문자가 바뀔 수 있는 환경에서는 `VITE_BASE=./ npm run build`(상대 경로)를 쓰면 경로가 깨지지 않습니다.
+- Actions 자동 빌드·배포를 쓰려면 `.github/workflows/deploy.yml`을 저장소에 추가하고 Pages Source를 "GitHub Actions"로 바꾸면 됩니다
+  (연결된 GitHub 앱에 workflows 권한이 없어 이 저장소에는 커밋되지 않은 상태입니다).
 - `dist/`를 다른 정적 호스팅에 직접 올려도 됩니다(이때는 그 호스팅의 하위 경로에 맞춰 `VITE_BASE` 지정).
+- 실제 배포 URL 검증 기록: [deploy-evidence/VERIFICATION-LIVE.md](./deploy-evidence/VERIFICATION-LIVE.md)
 
 ## 라이선스
 
