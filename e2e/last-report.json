@@ -1,0 +1,636 @@
+{
+  "ranAt": "2026-11-21T05:17:40.765Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    {
+      "group": "기본",
+      "name": "첫 로드(App Shell) · 도구 7개",
+      "ok": true,
+      "detail": "title=\"Pocket Tools — 링크 · 사진 · PDF · QR 7가지 도구\", h1=\"Pocket Tools\", 탭 7개: URL 정리 / 이미지 압축 / 비율 조정 / PDF ↔ 이미지 / EXIF·모자이크 / 워터마크 / QR 생성"
+    },
+    {
+      "group": "기본",
+      "name": "390×844 가로 스크롤 0",
+      "ok": true,
+      "detail": "초기 화면: scrollWidth 390 ≤ clientWidth 390 (body 390)"
+    },
+    {
+      "group": "기본",
+      "name": "탭 7개가 잘리지 않고 배치된다",
+      "ok": true,
+      "detail": "URL 정리:86px 이미지 압축:86px 비율 조정:86px PDF ↔ 이미지:86px EXIF·모자이크:86px 워터마크:86px QR 생성:86px"
+    },
+    {
+      "group": "기본",
+      "name": "manifest·아이콘·Service Worker 연결",
+      "ok": true,
+      "detail": "manifest \"Pocket Tools — 링크·사진·PDF·QR 7가지 도구\" · 아이콘/워커 ./icons/icon-192.png:200/3608B ./icons/icon-512.png:200/11396B ./pdfjs/pdf.worker.min.mjs:200/1081152B · SW http://127.0.0.1:4319/ · 캐시 pocket-tools-v2"
+    },
+    {
+      "group": "URL",
+      "name": "예시 URL 추적 파라미터 제거",
+      "ok": true,
+      "detail": "요약=\"추적 파라미터 5개를 제거했습니다. 필수 파라미터 2개는 그대로 보존했습니다.\", 제거 칩 5개, 결과=\"https://shop.example.com/item/4821?id=4821&page=2#review\""
+    },
+    {
+      "group": "URL",
+      "name": "서명 URL: X-Amz-* 보존 · utm 제거",
+      "ok": true,
+      "detail": "서명 보존=true, 추적 제거=true, 요약=\"추적 파라미터 2개를 제거했습니다. 필수 파라미터 6개는 그대로 보존했습니다.\""
+    },
+    {
+      "group": "URL",
+      "name": "잘못된 URL 한글 오류 안내",
+      "ok": true,
+      "detail": "파싱 오류=\"올바른 URL이 아닙니다. 주소 전체를 붙여넣어 주세요. (예: https://example.com/?utm_source=news)\" / 도메인 오류=\"도메인 형식이 올바르지 않습니다. 주소를 다시 확인해 주세요. (예: https://example.com)\""
+    },
+    {
+      "group": "URL",
+      "name": "원클릭 복사 → 클립보드 일치",
+      "ok": true,
+      "detail": "클립보드=\"https://shop.example.com/item/4821?id=4821&page=2#review\""
+    },
+    {
+      "group": "URL",
+      "name": "결과 화면 가로 스크롤 0",
+      "ok": true,
+      "detail": "URL 결과: scrollWidth 390 ≤ clientWidth 390 (body 390)"
+    },
+    {
+      "group": "이미지",
+      "name": "JPG 업로드 → 실제 압축·용량 감소",
+      "ok": true,
+      "detail": "원본 1.09 MB(1143455B) → 결과 447 KB, 절감 -60.0%, 미리보기 1600×1200, JPG · 71ms 처리"
+    },
+    {
+      "group": "이미지",
+      "name": "결과 파일 실제 다운로드",
+      "ok": true,
+      "detail": "파일 test-photo-압축.jpg, 457274B 저장"
+    },
+    {
+      "group": "이미지",
+      "name": "WebP 변환 → 형식 전환 확인",
+      "ok": true,
+      "detail": "WebP · 290ms 처리 (결과 501 KB)"
+    },
+    {
+      "group": "이미지",
+      "name": "품질 10% → 용량 추가 감소",
+      "ok": true,
+      "detail": "절감 -88.8%, 결과 125 KB"
+    },
+    {
+      "group": "이미지",
+      "name": "텍스트 파일 업로드 → 한글 오류",
+      "ok": true,
+      "detail": "지원하지 않는 파일입니다(.txt). JPG · PNG · WebP 이미지만 압축할 수 있습니다."
+    },
+    {
+      "group": "이미지",
+      "name": "손상 파일 업로드 → 읽기 실패 안내",
+      "ok": true,
+      "detail": "이미지를 읽을 수 없습니다. 파일이 손상되었거나 지원하지 않는 형식입니다."
+    },
+    {
+      "group": "이미지",
+      "name": "PNG 업로드 후 압축 결과 표시(원본 형식 유지)",
+      "ok": true,
+      "detail": "결과 182 KB, PNG · 34ms 처리"
+    },
+    {
+      "group": "이미지",
+      "name": "결과 화면 가로 스크롤 0",
+      "ok": true,
+      "detail": "이미지 결과: scrollWidth 390 ≤ clientWidth 390 (body 390)"
+    },
+    {
+      "group": "QR",
+      "name": "빈 입력 오류 안내",
+      "ok": true,
+      "detail": "QR 코드로 만들 내용을 입력해 주세요."
+    },
+    {
+      "group": "QR",
+      "name": "QR 생성 → jsQR 실디코딩 100% 일치",
+      "ok": true,
+      "detail": "캔버스 1024×1024, 디코드 원문 일치"
+    },
+    {
+      "group": "QR",
+      "name": "QR PNG 다운로드 → 파일 디코딩 일치",
+      "ok": true,
+      "detail": "qr-example-com-pocket-tools-20261121-141712.png · PNG 서명=true · 1024×1024 · 58303B · 디코드 일치"
+    },
+    {
+      "group": "QR",
+      "name": "이미지 복사 (또는 fallback 안내)",
+      "ok": true,
+      "detail": "상태=\"QR 이미지를 클립보드에 복사했습니다. 붙여넣기로 사용하세요.\""
+    },
+    {
+      "group": "QR",
+      "name": "내용 수정 시 자동 갱신 + 디코딩 일치",
+      "ok": true,
+      "detail": "갱신된 QR 디코딩 일치"
+    },
+    {
+      "group": "④ 비율",
+      "name": "JPG 1:1 여백 추가 → 1600×1600 실제 생성·다운로드",
+      "ok": true,
+      "detail": "1600×1200 → 1600×1600 (표시), 파일 test-photo-1x1-여백.png 1600×1600 3760037B, 비율 확인: 1:1 일치 · 181ms 처리"
+    },
+    {
+      "group": "④ 비율",
+      "name": "9:16 여백 추가 → 900×1600 (비율 0.5625)",
+      "ok": true,
+      "detail": "900×1600, 파일 900×1600 비율 0.5625"
+    },
+    {
+      "group": "④ 비율",
+      "name": "16:9 꽉 채우기(중앙 크롭) → 1600×900",
+      "ok": true,
+      "detail": "1600×900, 파일 1600×900, 모서리 rgb(42,53,117)"
+    },
+    {
+      "group": "④ 비율",
+      "name": "여백 배경: 검정 vs 흐린 원본 구분",
+      "ok": true,
+      "detail": "검정 여백 rgb(0,0,0) / 흐린 여백 rgb(73,58,85)"
+    },
+    {
+      "group": "④ 비율",
+      "name": "WebP 출력·전후 해상도·용량 표시",
+      "ok": true,
+      "detail": "test-photo-1x1-여백.webp 920520B 1600×1600, 용량 1.09 MB → 899 KB"
+    },
+    {
+      "group": "④ 비율",
+      "name": "잘못된 파일(.txt) 업로드 오류 안내",
+      "ok": true,
+      "detail": "지원하지 않는 파일입니다(.txt). JPG · PNG · WebP 이미지를 선택해 주세요."
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "이미지 3장 추가 → 순서 목록 표시",
+      "ok": true,
+      "detail": "3장, 1번째=photo-2.png600×400 · 98 KB"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "위로 이동 → 페이지 순서 변경",
+      "ok": true,
+      "detail": "1번째=test-photo.jpg1600×1200 · 1.09 MB, 2번째=photo-2.png600×400 · 98 KB"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "3번째 페이지 삭제 → 2장",
+      "ok": true,
+      "detail": "2장, 목록 2개"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "PDF 생성·다운로드 → 페이지 수/페이지 크기 검증",
+      "ok": true,
+      "detail": "pocket-tools-2장-20261121-1417.pdf 1217965B, %PDF-, 2페이지, 1쪽 1600×1200, 2쪽 600×400"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "PDF → 이미지: 2페이지 실제 렌더링",
+      "ok": true,
+      "detail": "2페이지를 PNG로 변환 · “Pocket Tools 이미지 PDF” · 미리보기 2개 · blob:http://"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "페이지 1 이미지 다운로드 → 실제 PNG 1240×930",
+      "ok": true,
+      "detail": "built-images-001.png 2251023B, PNG 서명=true, 1240×930"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "전체 ZIP 다운로드 → 2개 항목",
+      "ok": true,
+      "detail": "built-images-이미지-2장-20261121-1417.zip 2486789B, 항목 page-001.png, page-002.png"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "JPEG 형식으로 다시 변환·다운로드",
+      "ok": true,
+      "detail": "built-images-001.jpg 498022B 1240×930 · JPEG 매직=true · 2페이지를 JPEG로 변환 · “Pocket Tools 이미지 PDF”"
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "잘못된 파일(.txt) 업로드 오류 안내",
+      "ok": true,
+      "detail": "PDF 파일만 선택할 수 있습니다(.pdf). 이미지를 PDF로 만들려면 위의 \"이미지 → PDF\" 모드를 사용하세요."
+    },
+    {
+      "group": "⑤ PDF",
+      "name": "암호화 PDF 오류 안내",
+      "ok": true,
+      "detail": "암호(비밀번호)가 설정된 PDF입니다. 암호를 해제한 파일을 다시 선택해 주세요."
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "실제 EXIF(GPS·카메라·촬영일시) 검출",
+      "ok": true,
+      "detail": "메타데이터 11개 항목 발견 · JPEG · GPS=37.570000° N, 126.978056° E · 카메라=PocketCam PC-2026 · 촬영=2026-11-20 15:04:05 · 태그 7개"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "마우스 드래그로 모자이크 영역 1개 지정",
+      "ok": true,
+      "detail": "영역 1개"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "터치(포인터) 드래그로 영역 추가 → 2개",
+      "ok": true,
+      "detail": "영역 2개"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "되돌리기·전체 초기화 동작",
+      "ok": true,
+      "detail": "되돌리기 후 1개, 초기화 후 0개"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "PNG 저장 → 결과 바이트 EXIF 0건 검증 표시",
+      "ok": true,
+      "detail": "✓ 메타데이터 완전 제거 확인 · EXIF 0건 · GPS 0건 · 카메라 0건 / 결과 바이트 재검사: EXIF 세그먼트 0건 · 파서 태그 0건"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "다운로드 파일에서 EXIF·GPS 태그 0건 실측",
+      "ok": true,
+      "detail": "exif-photo-모자이크-EXIF제거.png 1478066B · 'Exif' 마커=false · 개인정보 태그=0 · GPS=false · 카메라=false (구조 태그 제외)"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "모자이크 실제 픽셀 적용(영역 안 변화·밖 동일)",
+      "ok": true,
+      "detail": "영역 안 변화 69862/70000px · 영역 밖 변화 0/730000px · 최대 변화 84.7"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "JPEG 저장도 EXIF 0건 (다운로드 실측)",
+      "ok": true,
+      "detail": "exif-photo-모자이크-EXIF제거.jpg 334057B · JPEG 매직=true · Exif 마커=false · 개인정보 태그 0"
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "EXIF 없는 PNG 안내",
+      "ok": true,
+      "detail": "이 사진에는 EXIF(위치·카메라·촬영일시) 정보가 없습니다. PNG처럼 원래 메타데이터가 없는 이미지이며, 저장해도 메타데이터는 생기지 않습니다."
+    },
+    {
+      "group": "⑥ EXIF",
+      "name": "잘못된 파일(.txt) 오류 안내",
+      "ok": true,
+      "detail": "지원하지 않는 파일입니다(.txt). JPG · PNG · WebP 이미지를 선택해 주세요."
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "다중 이미지 2장 업로드 → 썸네일 표시",
+      "ok": true,
+      "detail": "2장, 썸네일 2개, 미리보기 캔버스 1"
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "텍스트·투명도·위치 설정 후 일괄 적용",
+      "ok": true,
+      "detail": "상태=\"2장에 워터마크를 적용했습니다. ZIP 또는 개별 다운로드로 저장하세요.\" · 2장 완료 · 총 1.02 MB"
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "ZIP 다운로드 → 2개 항목, 원본과 다른 바이트",
+      "ok": true,
+      "detail": "워터마크-2장-20261121-1417.zip 1068785B · test-photo-워터마크.jpg(962735B,원본과다름=true), photo-2-워터마크.png(109159B,원본과다름=true)"
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "개별 다운로드 + 좌상단 워터마크 픽셀 확인",
+      "ok": true,
+      "detail": "test-photo-워터마크.jpg 962735B · 좌상단 변화 20615px(최대 132) · 하단 변화 23243px"
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "로고 이미지 + 우하단 위치 일괄 적용",
+      "ok": true,
+      "detail": "logo.png · 240×80 (투명 PNG 권장) · 우하단 변화 42162px(최대 203.7) · test-photo-워터마크.jpg 953746B"
+    },
+    {
+      "group": "⑦ 워터마크",
+      "name": "잘못된 파일(.txt) 오류 안내",
+      "ok": true,
+      "detail": "지원하지 않는 파일입니다(.txt). JPG · PNG · WebP 이미지를 선택해 주세요."
+    },
+    {
+      "group": "안정성",
+      "name": "새로고침 후 정상 동작(탭 복원 포함)",
+      "ok": true,
+      "detail": "복원 탭=tab-wm, URL 결과 정상, 비율 변환 600×600"
+    },
+    {
+      "group": "안정성",
+      "name": "하위 경로 배포(/pocket-tools/) 호환",
+      "ok": true,
+      "detail": "manifest href=\"./manifest.webmanifest\", pdf 워커 도달=true, 콘솔 에러 0, 요청 실패 0"
+    },
+    {
+      "group": "안정성",
+      "name": "360·390·430px × 7개 탭 가로 스크롤 0",
+      "ok": true,
+      "detail": "360/label-clipped:0 360/url:360≤360 360/image:360≤360 360/ratio:360≤360 360/pdf:360≤360 360/exif:360≤360 360/wm:360≤360 360/qr:360≤360 390/label-clipped:0 390/url:390≤390 390/image:390≤390 390/ratio:390≤390 390/pdf:390≤390 390/exif:390≤390 390/wm:390≤390 390/qr:390≤390 430/label-clipped:0 430/url:430≤430 430/image:430≤430 430/ratio:430≤430 430/pdf:430≤430 430/exif:430≤430 430/wm:430≤430 430/qr:430≤430"
+    },
+    {
+      "group": "안정성",
+      "name": "콘솔 에러 0",
+      "ok": true,
+      "detail": "콘솔 에러 없음"
+    },
+    {
+      "group": "안정성",
+      "name": "페이지 에러 0",
+      "ok": true,
+      "detail": "페이지 에러 없음"
+    },
+    {
+      "group": "안정성",
+      "name": "외부 네트워크 전송 0건",
+      "ok": true,
+      "detail": "네트워크 요청 27건 전부 자체 오리진(27건), 외부 0건, 메모리(blob/data) 28건"
+    },
+    {
+      "group": "안정성",
+      "name": "오프라인 재접속 (오프라인 캐시)",
+      "ok": true,
+      "detail": "SW 제어=true, 오프라인 로드 h1=\"Pocket Tools\", 탭 7개"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:4319/manifest.webmanifest",
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:4319/icons/icon-192.png",
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:4319/icons/icon-512.png",
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pdfjs/pdf.worker.min.mjs",
+      "type": "fetch"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/5df20b48-180b-4bcd-b8cb-ba81b088fbf9",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/a46a7530-1625-4ad9-a738-185bffdfb154",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/8e1935c7-68c2-4bcb-aab2-3ac45029f81f",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/06d0c7bf-0e3a-478c-b59e-74d6467a18d9",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/3326b0b7-38e4-45af-9207-b189a57e6c22",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/dcec1b12-210b-44ad-a1fe-5ee8532c6016",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/cae4caf8-6f30-4dd6-998b-bc041c90e3c6",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/a31e9db4-f106-44d2-b6f4-694bb0b78984",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/4218e752-daa2-485b-84a6-14ce6441e215",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/c6b450e7-3e08-49b7-a29f-68009221c9a2",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/e6b01064-3650-4a45-9aef-4adacf9afebd",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/c41cbcee-37bd-4fd7-beaf-02053acfca0f",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/4fcc4fde-9a7f-4c02-be36-f810339e7175",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/b9ab2787-2a53-4740-bf2f-9773fc965755",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/ed01dbb3-decf-4401-99d9-f129ffe21f97",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/full.esm-w29lPW5A.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/es-Dgqv2EVx.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/_commonjsHelpers-D6Ya60D-.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/pdf-D-PJ2UYd.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pdfjs/pdf.worker.min.mjs",
+      "type": "script"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/16539b51-f45a-4d39-a291-7278b9f5ee90",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/5f46704f-e43a-41f1-9909-ee60e9a44e04",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/jszip.min-B74vRJjQ.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pdfjs/pdf.worker.min.mjs",
+      "type": "script"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/b1f252e6-fc48-4386-985e-b1f57d73130d",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/4862e12c-e70d-40f5-91cf-9aacdae01f99",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pdfjs/pdf.worker.min.mjs",
+      "type": "script"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/2069cad0-168f-4437-aad9-b3ff518a4a91",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/180fb847-ed31-4a87-910b-53c8268dc6d9",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/e526e265-963d-4727-91b3-31f7856a8cbd",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/92a6640e-8945-4fb9-be0e-7ebb24e35d3e",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/cfa4ea3c-b4df-479e-abfc-1c106db28d04",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/406ea354-e2e4-4a8b-92c6-ec4586bbed1b",
+      "type": "image"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/0eca89d6-57c0-4b5d-941a-989174399133",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/ad7bb8f3-93d2-4a6f-969b-e6518469c400",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4319/3adc61bf-3211-4ee2-a7b5-1af765dc9786",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/assets/es-Dgqv2EVx.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/assets/_commonjsHelpers-D6Ya60D-.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/pocket-tools/pdfjs/pdf.worker.min.mjs",
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:4319/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BKhN14FA.js",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:4319/assets/index-BPkQuIXw.css",
+      "type": "stylesheet"
+    }
+  ]
+}

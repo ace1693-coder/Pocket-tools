@@ -1,0 +1,36 @@
+{
+  "name": "Pocket Tools — 링크·사진·PDF·QR 7가지 도구",
+  "short_name": "Pocket Tools",
+  "description": "URL 정리, 이미지 압축, 사진 비율 조정, PDF↔이미지, EXIF 제거·모자이크, 워터마크, QR 생성. 모든 처리는 기기 안에서만.",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#0a0e14",
+  "theme_color": "#0a0e14",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
